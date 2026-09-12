@@ -105,3 +105,20 @@ Update Hiring Stage
 Pipeline & Timeline
        ↓
 Dashboard Analytics
+```
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Applications
+![Applications](./screenshots/applications.png)
+
+### Application Details
+![Application Details](./screenshots/application-details.png)
+
+### Application Pipeline
+![Pipeline](./screenshots/pipeline.png)
+
+### Profile
+![Profile](./screenshots/profile.png)
