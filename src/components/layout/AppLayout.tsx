@@ -10,7 +10,7 @@ export const AppLayout: React.FC = () => {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-50/60">
+    <div className="flex h-screen overflow-hidden bg-slate-100/70">
       {/* Desktop Sidebar */}
       <Sidebar />
 
@@ -21,7 +21,7 @@ export const AppLayout: React.FC = () => {
           onOpenAddModal={() => setIsAddModalOpen(true)}
         />
 
-        <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
+        <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.06),transparent_30%)]">
           <div className="max-w-7xl mx-auto w-full">
             <Outlet />
           </div>

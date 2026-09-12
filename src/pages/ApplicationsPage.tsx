@@ -42,19 +42,19 @@ export const ApplicationsPage: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6 pb-12">
+    <div className="saas-page">
       {/* Page Title & Add Action */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">
+            <h1 className="saas-title text-2xl">
               Job Applications
             </h1>
             <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
               {applications.length} {applications.length === 1 ? 'Job' : 'Jobs'}
             </span>
           </div>
-          <p className="text-sm text-slate-500 mt-1">
+          <p className="saas-subtitle">
             Manage, filter, and track all your active and archived job applications.
           </p>
         </div>
@@ -66,11 +66,13 @@ export const ApplicationsPage: React.FC = () => {
       </div>
 
       {/* Filter and Search Bar */}
-      <ApplicationFilters
-        filters={filters}
-        onChange={setFilters}
-        onReset={handleResetFilters}
-      />
+      <div className="saas-toolbar">
+        <ApplicationFilters
+          filters={filters}
+          onChange={setFilters}
+          onReset={handleResetFilters}
+        />
+      </div>
 
       {/* Table Content or Empty States */}
       {isLoading ? (

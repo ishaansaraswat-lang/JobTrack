@@ -26,7 +26,7 @@ export const StatCard: React.FC<StatCardProps> = ({
     <Card
       onClick={onClick}
       className={cn(
-        'p-5 transition-all border border-slate-200/80 bg-white hover:shadow-md hover:border-slate-300',
+        'group relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-lg',
         onClick && 'cursor-pointer'
       )}
     >
@@ -46,7 +46,7 @@ export const StatCard: React.FC<StatCardProps> = ({
         </div>
         <div
           className={cn(
-            'flex h-11 w-11 items-center justify-center rounded-xl transition-transform group-hover:scale-105',
+            'flex h-11 w-11 items-center justify-center rounded-2xl transition-transform group-hover:scale-110',
             bgClass,
             colorClass
           )}

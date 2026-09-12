@@ -34,7 +34,7 @@ export const ApplicationDetailPage: React.FC = () => {
 
   if (isLoading) {
     return (
-      <div className="space-y-6 pb-12">
+      <div className="saas-page">
         <Skeleton className="h-20 w-full rounded-xl" />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <Skeleton className="h-64 lg:col-span-2 rounded-xl" />
@@ -57,7 +57,7 @@ export const ApplicationDetailPage: React.FC = () => {
   }
 
   return (
-    <div className="space-y-6 pb-12">
+    <div className="saas-page">
       {/* Header */}
       <ApplicationHeader
         application={application}

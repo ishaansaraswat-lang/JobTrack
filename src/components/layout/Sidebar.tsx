@@ -42,10 +42,10 @@ export const Sidebar: React.FC = () => {
   ];
 
   return (
-    <aside className="hidden md:flex flex-col w-64 bg-slate-900 text-slate-300 border-r border-slate-800 shrink-0 select-none">
+    <aside className="hidden md:flex flex-col w-[250px] bg-slate-950 text-slate-300 border-r border-slate-800 shrink-0 select-none">
       {/* Brand Header */}
       <div className="h-16 flex items-center px-6 border-b border-slate-800/80 gap-3">
-        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white font-bold shadow-md shadow-indigo-600/30">
+        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 text-white font-bold shadow-lg shadow-indigo-900/30">
           JT
         </div>
         <div>
@@ -92,8 +92,8 @@ export const Sidebar: React.FC = () => {
                 cn(
                   'flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-all group',
                   isActive
-                    ? 'bg-indigo-600 text-white shadow-sm shadow-indigo-600/20 font-semibold'
-                    : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                    ? 'bg-white/10 text-white shadow-sm ring-1 ring-white/10 font-semibold'
+                    : 'text-slate-400 hover:bg-white/5 hover:text-white'
                 )
               }
             >
@@ -105,7 +105,7 @@ export const Sidebar: React.FC = () => {
                 <span
                   className={cn(
                     'text-[11px] font-semibold px-2 py-0.5 rounded-full',
-                    'bg-slate-800 text-slate-300 group-hover:bg-slate-700'
+                    'bg-white/10 text-slate-300 group-hover:bg-white/15'
                   )}
                 >
                   {item.badge}

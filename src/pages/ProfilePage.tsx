@@ -57,13 +57,13 @@ export const ProfilePage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6 pb-12">
+    <div className="max-w-5xl mx-auto saas-page">
       {/* Page Title */}
       <div>
-        <h1 className="text-2xl font-bold text-slate-900 tracking-tight">
+        <h1 className="saas-title text-2xl">
           User Profile & Settings
         </h1>
-        <p className="text-sm text-slate-500 mt-1">
+        <p className="saas-subtitle">
           Manage your personal details and career preferences.
         </p>
       </div>
@@ -71,7 +71,7 @@ export const ProfilePage: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Profile Card & Stats (1 col) */}
         <div className="space-y-6">
-          <Card className="border border-slate-200/80 bg-white shadow-xs text-center p-6">
+          <Card className="border border-slate-200/80 bg-white shadow-sm rounded-2xl text-center p-6">
             <div className="flex flex-col items-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-indigo-700 font-bold text-2xl mb-3 shadow-inner">
                 {profile?.full_name ? profile.full_name.charAt(0).toUpperCase() : 'U'}
@@ -119,7 +119,7 @@ export const ProfilePage: React.FC = () => {
           </Card>
 
           {/* Connection Status Card */}
-          <Card className="border border-slate-200/80 bg-white shadow-xs p-5 space-y-3">
+          <Card className="border border-slate-200/80 bg-white shadow-sm rounded-2xl p-5 space-y-3">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
               <Database className="h-4 w-4 text-slate-500" />
               Backend Connection
@@ -151,7 +151,7 @@ export const ProfilePage: React.FC = () => {
 
         {/* Edit Profile Form (2 cols) */}
         <div className="md:col-span-2">
-          <Card className="border border-slate-200/80 bg-white shadow-xs">
+          <Card className="border border-slate-200/80 bg-white shadow-sm rounded-2xl">
             <CardHeader className="pb-4 border-b border-slate-100">
               <CardTitle className="text-base">Personal & Professional Info</CardTitle>
               <CardDescription className="text-xs">

@@ -28,14 +28,14 @@ export const DashboardPage: React.FC = () => {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   return (
-    <div className="space-y-6 pb-12">
+    <div className="saas-page">
       {/* Welcome Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+          <h1 className="saas-title">
             Welcome back, {profile?.full_name?.split(' ')[0] || 'Job Seeker'} 👋
           </h1>
-          <p className="text-sm text-slate-500 mt-1">
+          <p className="saas-subtitle">
             Here is an overview of your job search progress and upcoming milestones.
           </p>
         </div>
@@ -60,7 +60,7 @@ export const DashboardPage: React.FC = () => {
       </div>
 
       {/* Statistics Cards Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 sm:gap-4">
         <StatCard
           title="Total"
           value={stats.total}

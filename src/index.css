@@ -32,7 +32,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 238.7 83.5% 58.6%;
 
-    --radius: 0.625rem;
+    --radius: 0.75rem;
   }
 
   .dark {
@@ -90,4 +90,19 @@
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { min-height: 100vh; background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%); }
+  button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+}
+
+@layer components {
+  .saas-page { @apply space-y-6 pb-12; }
+  .saas-title { @apply text-2xl sm:text-3xl font-bold tracking-tight text-slate-950; }
+  .saas-subtitle { @apply mt-1 text-sm text-slate-500; }
+  .saas-card { @apply rounded-2xl border border-slate-200/80 bg-white shadow-sm transition-shadow duration-200 hover:shadow-md; }
+  .saas-toolbar { @apply rounded-2xl border border-slate-200/80 bg-white/95 p-3 shadow-sm backdrop-blur; }
 }
